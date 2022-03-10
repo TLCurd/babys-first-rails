@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # Let's say when a user sends a GET request to a welcome route, /welcome_path, we want the welcomes controller's hello_method action to run. In order to do that we could write:
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/welcome_path" => "welcomes#hello"
+  get "/about_path" => "welcomes#about"
+
 end
